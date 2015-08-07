@@ -1,0 +1,142 @@
+/*I'm probably breaking lots and lots of conventions... sorry*/
+
+.navbar {
+	background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+}
+
+.jumbotron#main {
+	height: auto;
+	color: white;
+	text-align: center;
+  	text-shadow: #444 0 1px 1px;
+  	background:transparent;
+  	margin-bottom: 0px;
+}
+
+
+
+#main hr {
+	width: 20%;
+}
+
+.main-bg {
+  	background: url('../images/stone_mountain.jpg') no-repeat center center;
+  	position: fixed;
+  	width: 100%;
+  	height: auto;
+  	top:0;
+  	left:0;
+  	z-index: -1;
+}
+
+.jumbotron.aboutme {
+	/*background-color: #223C79;*/
+	background-color: #04A088;
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+
+#about {
+	color: #444444;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	padding-top: 3%;
+}
+
+#main h1 {
+	padding-top: 25%;
+	font-size: 6em;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+#aboutme-txt h2 {
+	font-size: 3em;
+}
+
+#aboutme-txt h3 {
+	font-size: 2em;
+}
+
+#self-photo {
+	text-align: center;
+}
+
+#portrait {
+	width: 75%;
+}
+
+#aboutme-txt {
+	text-align: left;
+}
+
+#projects {
+	background-color: #666699;
+}
+
+#about-projects p {
+	text-align: center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    max-height: 30%;
+    max-width: 20%;
+    margin: auto;
+    float: left;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+.project-info p {
+	font-size: 1.3em;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-top: 2%;
+}
+
+#myCarousel {
+	height: 500px;
+	padding-bottom: 70px;
+	margin-bottom: 30px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
+.container-fluid#resume {
+	overflow: auto;
+	background-color: #345678;
+	padding-bottom: 3%;
+}
+
+#resume object{
+	align: center;
+}
+
+.resume-rule {
+	width: 70%;
+}
+
+#contact {
+	text-align: center;
+	background-color: #444444
+}
+
+.container, p, h1, h2, h3, .jumbotron h1 {
+	color: white;
+}
+
+body {
+	font-family: Catamaran;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="My name is William Yang and I am a Computer Science &amp; Statistics major at Duke University and a Software Developer in training."/>
+	<meta name="author" content="William Yang"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="">
+	<title>William Yang</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran"> 
+	<!-- Angular -->
+	<script src="js/vendor/angular.min.js"></script>
+</head>
+
+<body ng-app="PersonalWebsiteApp">
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" id="menu-main">William Yang</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li id="menu-about"><a href="#">About</a></li>
+					<li id="menu-projects"><a href="#">Projects</a></li>
+					<li id="menu-resume"><a href="#">Resume</a></li>
+					<li id="menu-contact"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main -->
+	<div class="main-bg"></div>
+	<div class="jumbotron" id="main">
+		<div class="container">
+			<h1>William Yang</h1>
+			<hr>
+			<h3>Sophomore at Duke University</h3>
+			<br>
+			<a href="https://github.com/wallium/" target="_blank"class="btn btn-primary">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.linkedin.com/pub/william-yang/a5/24/565" target="_blank" class="btn btn-primary">LinkedIn</a>
+		</div>
+	</div>
+
+	<!-- About -->
+	<div class="jumbotron aboutme">
+		<div class="container" id="about">
+			<div class="row"><h1>About Me</h1></div>
+			<div class="row">
+				<div class="col-md-4" id="self-photo">
+					<img src="images/portrait.jpg" id="portrait" alt="This is me.">
+				</div>
+				<div class="col-md-8" id="aboutme-txt">
+					<h2>Hi,</h2><p>my name is William Yang, and I am a sophomore majoring in Computer Science and Statistics at Duke University.
+					My interests lie in web development and data analysis, and I'm always passionate about furthering my own learning and teaching others. If I'm not busy learning a new web framework or building a project, you can probably find me practicing on the piano or dancing for Duke Chinese Dance.</p>
+					<br>
+					<h3>Welcome to my site.</h3>
+				</div>
+			</div>
+			<br>
+		</div>
+	</div>
+
+	<!-- Projects -->
+	<div class="container-fluid" id="projects" ng-controller="ProjectController">
+		<div class="row">
+			<h1>Projects</h1>
+		</div>
+		<div class="row" id="about-projects">
+			<p>Here are some of the projects I've worked on.</p>
+		</div>
+		<!-- Carousel for projects -->
+
+		<div class="container">
+  			<br>
+  			<div id="myCarousel" class="carousel slide">
+    			<!-- Indicators -->
+    			<ol class="carousel-indicators">
+    	  			<li data-target="#myCarousel" data-slide-to="{{ project.number }}" class="{{ project.active }}" ng-repeat="project in projects"></li>
+    			</ol>
+	
+    			<!-- Wrapper for slides -->
+    			<div class="carousel-inner" role="listbox">
+    				<div class="item {{ project.active }}" ng-repeat="project in projects">
+    					<img ng-src="{{ project.image }}">
+						<span class="project-info">
+  							<h3>{{ project.name }}</h3>
+  							<p>{{ project.description }}</p>
+  							<br>
+ 							<p>Technologies used: {{ project.tech }}</p>
+						</span>
+    					<!-- TODO: make this into an Angular directive  <project proj="project"></project> -->
+    				</div>
+    			</div>
+	
+    			<!-- Left and right controls -->
+    			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    	  			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    	  			<span class="sr-only">Previous</span>
+    			</a>
+   		 		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    	  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    	  			<span class="sr-only">Next</span>
+    			</a>
+  			</div>
+		</div>
+
+	</div>
+
+	<!-- Resume -->
+	<div class="container-fluid" id="resume">
+		<h1>Resume</h1>
+		<br>
+		<center>
+<!-- 			<object data="misc/La valse d'Amelie.pdf" type="application/pdf" width="70%" height="100%">
+  				<p>It looks like your browser can't display this pdf :( . Well, you can <a href="misc/La valse d'Amelie.pdf">click here to
+  					download it.</a></p>
+  			</object> -->
+  			<!-- Insert resume here when it's ready later <p>PDF <a href="misc/La valse d'Amelie.pdf" target="_blank">here</a></p> -->
+		</center>
+		<div class="container" id="web-resume" ng-controller="ResumeController">
+			<div class="row">
+				<div class="col-md-3">
+					<h2 class="resume-section">Work</h2>
+				</div>
+			</div>
+			<div class="row" ng-repeat="job in jobs">
+				<div class="col-md-3 job">
+					<p>{{ job.place }}</p>
+					<p>{{ job.title }}</p>
+				</div>
+				<div class="col-md-6 job-info">
+					<p>{{ job.description }}</p>
+				</div>
+				<div class="col-md-3 job-duration">
+					<p>{{ job.duration }}</p>
+				</div>
+			</div>
+
+			<hr class="resume-rule">
+			<div class="row">
+				<div class="col-md-3">
+					<h2 class="resume-section">Education</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<p id="college">Duke University</p>
+					<p id="degree">B.S. in Computer Science, B.S. in Statistics</p>
+					<p id="graduation">Graduating Spring 2018</p>
+					<p id="gpa">GPA: 3.925</p>
+				</div>
+				<div class="col-md-9 classes">
+					<h3 id="relevant-courses">Relevant Courses</h3>
+					<div class="row" ng-repeat="course in courses">
+						<div class="col-md-10">
+							<p class="class">{{ course.name }}</p>
+						</div>
+						<div class="col-md-2">
+							<p class="grade">{{ course.grade }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="resume-rule">
+			<div class="row">
+				<div class="col-md-3">
+					<h2 class="resume-section">Skills</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<p>Languages</p>
+				</div>
+				<div class="col-md-9">
+					<p>{{ languages }}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<p>Frameworks/IDEs/Tools</p>
+				</div>
+				<div class="col-md-9">
+					<p>{{ tools }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="contact">
+		<h1>Contact Me</h1>
+		<br>
+		<p><a href="mailto:wzy@duke.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span></a>&nbsp;&nbsp;wzy@duke.edu</p>
+		<p>(678) 687-2395</p>
+		<br><br>
+	</div>
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+	<!-- *** AngularJS App *** -->
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+	<!-- Controllers -->
+	<script src="js/controllers/ProjectController.js"></script>
+	<script src="js/controllers/ResumeController.js"></script>
+	<!-- Directives -->
+	<script src="js/directives/project.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>

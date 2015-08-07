@@ -1,0 +1,16 @@
+Things I should/fix do when I have time:
+
+Find out why the navbar button to scroll to the resume/contact causes the height of the main
+background picture to momentarily be really large. (I think has something to do with 
+the call to the height of the projects container, but I don't know why)
+
+Implement navbar button active classes and have them change when I scroll through.
+Also style the navbar more.
+
+Pick better fonts and colors... LOL
+
+Figure out why the projects carousel is a little choppy and fix it.
+
+After making changes to the style, clean up style.css and get rid of redundancies
+
+Replace some ng-repeat div content with directives
