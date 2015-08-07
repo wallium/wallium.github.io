@@ -12,5 +12,10 @@ app.controller('ProjectController', ['$scope', function($scope){
 		name: "Personal Website",
 		description: "This is the website you're on right now! It's mostly built with HTML/CSS, Bootstrap, and JQuery. Using AngularJS really wasn't very necessary, but I wanted a chance to practice using it a bit.",
 		tech: "HTML, CSS, Bootstrap, JQuery, AngularJS"
+	},{
+		number: "2",
+		image: "images/ece bot.jpg",
+		description: "This is a robot I built with a partner for my Fundamentals of Electrical Engineering course. It uses various sensors to follow a line, determine its position relative to a magnet, gather data on a container of water, and communicate this information to other bots and humans with an XBee module and LED display.",
+		tech: "Arduino, various sensors and receivers"
 	}];
 }])
