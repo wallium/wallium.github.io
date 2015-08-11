@@ -21,6 +21,7 @@
 
 .main-bg {
   	background: url('../images/stone_mountain.jpg') no-repeat center center;
+  	background-color: #04A088;
   	position: fixed;
   	width: 100%;
   	height: auto;
