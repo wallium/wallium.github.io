@@ -17,11 +17,20 @@ app.controller('ResumeController', ['$scope', function($scope){
 	},{
 		name: "STAT 230: Probability",
 		grade: "A-"
+	},{
+		name: "STAT 250: Statistics",
+		grade: "--"
+	},{
+		name: "CS 308: Software Design/Implementation",
+		grade: "--"
+	},{
+		name: "CS 230: Discrete Math for Computer Science",
+		grade: "--"
 	}
 	];
 
-	$scope.languages = "Java, Python, MATLAB, JavaScript, HTML/CSS, Arduino";
-	$scope.tools = "Bootstrap, JQuery, AngularJS, Flask, Eclipse, Android Studio";
+	$scope.languages = "Java, Python, MATLAB, JavaScript, HTML/CSS, Arduino, R";
+	$scope.tools = "Bootstrap, JQuery, AngularJS, Flask, JavaFX, Eclipse, Android Studio";
 
 	$scope.jobs = [{
 		place: "Kids4Coding",
