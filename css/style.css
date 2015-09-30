@@ -83,6 +83,7 @@ p {
 
 #projects {
 	background-color: #666699;
+	position: relative;
 }
 
 #about-projects p {
@@ -108,7 +109,11 @@ p {
 }
 
 #myCarousel {
-	height: 750px;
+	/*height: 750px;*/
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	padding-top: 10%;
 	padding-bottom: 70px;
 	margin-bottom: 30px;
 }
@@ -116,12 +121,25 @@ p {
 .carousel-control.left,
 .carousel-control.right {
 	background-image: none;
+	margin-top: 30%;
+}
+
+#carouselContainer {
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: relative;
 }
 
 .container-fluid#resume {
 	overflow: auto;
 	background-color: #345678;
 	padding-bottom: 3%;
+}
+
+.carousel-indicators {
+	bottom: 0;
+	position: relative;
 }
 
 #resume object{

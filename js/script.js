@@ -3,6 +3,7 @@ $('.main-bg, .jumbotron').css('height', $(window).height() + 'px');
 var jumboHeight = $('.jumbotron').outerHeight();
 parallax();
 $('.jumbotron.aboutme').css('height', $('#about').height() + 80 + 'px');
+$('#projects').css('height', ($(window).height() - 50) + 'px');
 
 $(window).resize(function(){
 	$('.jumbotron').css('height', $(window).height() + 'px');
@@ -11,6 +12,8 @@ $(window).resize(function(){
 	$('.main-bg').css('height', (jumboHeight-scrolled) + 'px');
 
 	$('.jumbotron.aboutme').css('height', $('#about').height() + 80 + 'px');
+
+	$('#projects').css('height', ($(window).height() - 50) + 'px');
 });
 
 /* Parallax effect */

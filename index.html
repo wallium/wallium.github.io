@@ -85,13 +85,10 @@
 		</div>
 		<!-- Carousel for projects -->
 
-		<div class="container">
+		<div class="container" id="carouselContainer">
   			<br>
   			<div id="myCarousel" class="carousel slide">
-    			<!-- Indicators -->
-    			<ol class="carousel-indicators">
-    	  			<li data-target="#myCarousel" data-slide-to="{{ project.number }}" class="{{ project.active }}" ng-repeat="project in projects"></li>
-    			</ol>
+
 	
     			<!-- Wrapper for slides -->
     			<div class="carousel-inner" role="listbox">
@@ -116,6 +113,10 @@
 		    	  	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     	  			<span class="sr-only">Next</span>
     			</a>
+    			<!-- Indicators -->
+    			<ol class="carousel-indicators">
+    	  			<li data-target="#myCarousel" data-slide-to="{{ project.number }}" class="{{ project.active }}" ng-repeat="project in projects"></li>
+    			</ol>
   			</div>
 		</div>
 

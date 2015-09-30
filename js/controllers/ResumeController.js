@@ -30,7 +30,7 @@ app.controller('ResumeController', ['$scope', function($scope){
 	];
 
 	$scope.languages = "Java, Python, MATLAB, JavaScript, HTML/CSS, Arduino, R";
-	$scope.tools = "Bootstrap, JQuery, AngularJS, Flask, JavaFX, Eclipse, Android Studio";
+	$scope.tools = "Bootstrap, JQuery, AngularJS, MeteorJS, Flask, JavaFX, Eclipse, Android Studio";
 
 	$scope.jobs = [{
 		place: "Kids4Coding",
@@ -40,7 +40,7 @@ app.controller('ResumeController', ['$scope', function($scope){
 	},{
 		place: "Duke University CS Department",
 		title: "Undergraduate Teaching Assistant",
-		description: "I am a teaching assistant for CompSci 201: Data Structures and Algorithms. I led a recitation section and offered help to students in the course.",
+		description: "I am a teaching assistant for CompSci 201: Data Structures and Algorithms. I lead a recitation section, grade assignments, and host helper hours for the course.",
 		duration: "January 2015 - present"
 	},{
 		place: "Trinity Technology Services",

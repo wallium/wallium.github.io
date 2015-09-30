@@ -8,13 +8,20 @@ app.controller('ProjectController', ['$scope', function($scope){
 		tech: "Android SDK, Python, Flask, MongoDB"
 	},{
 		number: "1",
+		image: "images/virtuocity.png",
+		name: "VirtuoCity",
+		description: "I worked in a team of 4 to create this at HackGT Fall 2015. This cross-platform app helps recovering addicts avoid relapse by providing them with gentle reminders from friend and family. It tracks how long users stay at danger locations (e.g. bars and clubs for recovering alcoholics) which can be chosen by the user and notifies contacts if the user stays for too long.",
+		tech: "HTML, CSS, MeteorJS, JQuery, Yelp API, Twilio API"
+	},{
+		number: "2",
 		image: "images/website.jpg",
 		name: "Personal Website",
 		description: "This is the website you're on right now! It's mostly built with HTML/CSS, Bootstrap, and JQuery. Using AngularJS really wasn't very necessary, but I wanted a chance to practice using it a bit.",
 		tech: "HTML, CSS, Bootstrap, JQuery, AngularJS"
 	},{
-		number: "2",
+		number: "3",
 		image: "images/ece bot.jpg",
+		name: "Arduino Bot",
 		description: "This is a robot I built with a partner for my Fundamentals of Electrical Engineering course. It uses various sensors to follow a line, determine its position relative to a magnet, gather data on a container of water, and communicate this information to other bots and humans with an XBee module and LED display.",
 		tech: "Arduino, various sensors and receivers"
 	}];
