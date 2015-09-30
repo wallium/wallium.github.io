@@ -99,6 +99,7 @@
   							<p>{{ project.description }}</p>
   							<br>
  							<p>Technologies used: {{ project.tech }}</p>
+ 							<h1></h1>
 						</span>
     					<!-- TODO: make this into an Angular directive  <project proj="project"></project> -->
     				</div>
@@ -115,7 +116,7 @@
     			</a>
     			<!-- Indicators -->
     			<ol class="carousel-indicators">
-    	  			<li data-target="#myCarousel" data-slide-to="{{ project.number }}" class="{{ project.active }}" ng-repeat="project in projects"></li>
+    	  			<li data-target="#myCarousel" data-slide-to="{{$index}}" class="{{ project.active }}" ng-repeat="project in projects"></li>
     			</ol>
   			</div>
 		</div>
