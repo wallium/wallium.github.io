@@ -11,6 +11,11 @@ app.controller('ProjectController', ['$scope', function($scope){
 		description: "I worked in a team of 4 to create this at HackGT Fall 2015. This cross-platform app helps recovering addicts avoid relapse by providing them with gentle reminders from friend and family. It tracks how long users stay at danger locations (e.g. bars and clubs for recovering alcoholics) which can be chosen by the user and notifies contacts if the user stays for too long.",
 		tech: "HTML, CSS, MeteorJS, JQuery, Yelp API, Twilio API"
 	},{
+		image: "images/tetrispace.jpg",
+		name: "Tetrispace",
+		description: "I worked in a team of 3 to create this at HackNC Fall 2015. This webapp provides a platform for people to easily find and share storage rental space with others. It provides an interface for users to make listings of storage spaces and a search function that can take several parameters. Automatic transactions to confirm reservations are also built into the app. We were awarded the SQLSentry sponsor prize for the best use of a SQL database.",
+		tech: "HTML, CSS, NodeJS, JQuery, PostgreSQL, SQLite, Google Maps API, Capital One API"
+	},{
 		image: "images/cellsociety.jpg",
 		name: "Cell Society",
 		description: "I worked in a team of 3 to create this project for my Software Design/Implementation course. It is able to simulate different kinds of cellular automata interactions given an input XML file with initial states. It can support different shapes of cells, grid boundaries (bounded vs. unbounded), colors, parameters for interactions, and it is easily extensible to new rule sets.",
@@ -18,7 +23,7 @@ app.controller('ProjectController', ['$scope', function($scope){
 	},{
 		image: "images/website.jpg",
 		name: "Personal Website",
-		description: "This is the website you're on right now! It's mostly built with HTML/CSS, Bootstrap, and JQuery. Using AngularJS really wasn't very necessary, but I wanted a chance to practice using it a bit. I used AngularJS to automatically generate this projects section and the resume section below, making it easy for me to add new ones.",
+		description: "This is the website you're on right now! It's mostly built with HTML/CSS, Bootstrap, and JQuery. Using AngularJS really wasn't very necessary, but I wanted a chance to practice using it a bit. I used AngularJS to auotmatically generate this projects section and the resume section below, making it easy for me to add new ones.",
 		tech: "HTML, CSS, Bootstrap, JQuery, AngularJS"
 	},{
 		image: "images/ece bot.jpg",
