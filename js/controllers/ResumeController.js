@@ -30,9 +30,9 @@ app.controller('ResumeController', ['$scope', function($scope){
 	];
 
 	$scope.CScourses = [
-		"CS 201: Data Structures and Algorithms",
-		"ECE 110: Fundamentals of Electrical and Computer Engineering",
 		"EGR 103: Computational Methods in Engineering",
+		"ECE 110: Fundamentals of Electrical and Computer Engineering",
+		"CS 201: Data Structures and Algorithms",
 		"CS 230: Discrete Math for Computer Science",
 		"CS 250: Computer Architecture",
 		"CS 270: Intro to AI",
@@ -43,8 +43,8 @@ app.controller('ResumeController', ['$scope', function($scope){
 	$scope.STAcourses = [
 		"MATH 212: Multivariable Calculus",
 		"MATH 216: Linear Algebra",
-		"STAT 230: Probability",
 		"STAT 210: Regression Analysis",
+		"STAT 230: Probability",
 		"STAT 250: Statistics"
 	];
 
