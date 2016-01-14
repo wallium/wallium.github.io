@@ -66,7 +66,7 @@
 				</div>
 				<div class="col-md-8" id="aboutme-txt">
 					<h2>Hi,</h2><p>my name is William Yang, and I am a sophomore majoring in Computer Science and Statistics at Duke University.
-					My interests lie in web development and data analysis, and I'm always passionate about furthering my own learning and teaching others. If I'm not busy learning a new web framework or building a project, you can probably find me practicing on the piano or dancing for Duke Chinese Dance.</p>
+					My interests lie in software development and data science, and I'm always passionate about furthering my own learning and teaching others. If I'm not busy learning a new web framework or building a project, you can probably find me practicing on the piano or dancing for Duke Chinese Dance.</p>
 					<br>
 					<h3>Welcome to my site.</h3>
 				</div>
@@ -167,12 +167,30 @@
 				</div>
 				<div class="col-md-9 classes">
 					<h3 id="relevant-courses">Relevant Courses</h3>
-					<div class="row" ng-repeat="course in courses">
-						<div class="col-md-10">
+					<br>
+					<div class="row">
+						<div class="col-md-6"><h3>Computer Science</h3></div>
+						<div class="col-md-6"><h3>Math/Statistics</h3></div>
+					</div>
+
+<!-- 					<div class="row" ng-repeat="course in courses">
+						<div class="col-md-12">
 							<p class="class">{{ course.name }}</p>
 						</div>
 						<div class="col-md-2">
 							<p class="grade">{{ course.grade }}</p>
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="col-md-6 CS-classes">
+							<div class="row" ng-repeat="course in CScourses">
+								<p class="class">{{ course }}</p>
+							</div>
+						</div>
+						<div class="col-md-6 STAT-classes">
+							<div class="row" ng-repeat="course in STAcourses">
+								<p class="class">{{ course }}</p>
+							</div>
 						</div>
 					</div>
 				</div>
